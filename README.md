@@ -2,17 +2,20 @@
 BEGIN
 	CLASS Program
 		Main METHOD
-			const int baseCost = 200;
-			const int hourlyRate = 150;
-			const int mileRate = 2;
+			CONST INTEGER baseCost = 200
+			CONST INTEGER hourlyRate = 150
+			CONST INTEGER mileRate = 2
 
-			Console.WriteLine("how many hours will the move take?");
-			var hours = Convert.ToDouble(Console.ReadLine());
+			PRINT
+			- "how many hours will the move take?"
+			VAR hours = (To Double)(PROMPT FOR INPUT)
 
-			Console.WriteLine("how many miles is the move");
-			var miles = Convert.ToDouble(Console.ReadLine());
+			PRINT
+			- "how many miles is the move"
+			VAR miles = (To Double)(PROMPT FOR INPUT)
 
-			Console.WriteLine("Total: {0:C}", hours*hourlyRate + mileRate * miles + baseCost);
+			PRINT
+			- "Total: {FORMAT TO CURRENCY}", hours * hourlyRate + mileRate * miles + baseCost)
 		END Main
 	END Program
 END
