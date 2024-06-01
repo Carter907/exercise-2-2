@@ -1,3 +1,4 @@
+```
 BEGIN
 	CLASS Program
 		Main METHOD
@@ -12,3 +13,4 @@ BEGIN
 		END Main
 	END Program
 END
+```
